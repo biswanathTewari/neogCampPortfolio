@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Closures</title>
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
+   <body>
+      <nav class="navigation">
+         <div class="nav-brand">Biswanath Tewari</div>
+         <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+               <a class="link" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+               <a class="link" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+               <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+         </ul>
+      </nav>
+
+      <header class="hero">
+         <h1 class="hero-heading">What is Closures ?</h1>
+         <img class="hero-img" src="/undraw_ideas_s70l.svg" alt="" />
+      </header>
+
+      <section class="section ow">
+         <div class="container container-center">
+            <small class="hero-dates">November 2021 </small>
+            <h1>Defination:</h1>
+            <p>
+               A closure is the combination of a function bundled together
+               (enclosed) with references to its surrounding state (the lexical
+               environment). In other words, a closure gives you access to an
+               outer function’s scope from an inner function. In JavaScript,
+               closures are created every time a function is created, at
+               function creation time.
+            </p>
+         </div>
+      </section>
+
+      <section class="section">
+         <div class="container container-center">
+            <h1>Example:</h1>
+            <p>
+               function makeFunc() { <br />
+               var name = 'Mozilla'; <br />
+               function displayName() { <br />
+               alert(name); <br />
+               } <br />
+               return displayName; <br />
+               } <br />
+               <br />
+               var myFunc = makeFunc();<br />
+               myFunc();<br />
+            </p>
+         </div>
+      </section>
+   </body>
+</html>

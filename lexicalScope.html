@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Closures</title>
+      <link rel="stylesheet" href="/styles.css" />
+   </head>
+   <body>
+      <nav class="navigation">
+         <div class="nav-brand">Biswanath Tewari</div>
+         <ul class="list-non-bullet nav-pills">
+            <li class="list-item-inline">
+               <a class="link" href="/">home</a>
+            </li>
+            <li class="list-item-inline">
+               <a class="link" href="/projects.html">projects</a>
+            </li>
+            <li class="list-item-inline">
+               <a class="link link-active" href="/blogs.html">Blogs</a>
+            </li>
+         </ul>
+      </nav>
+
+      <header class="hero">
+         <h1 class="hero-heading">What is Lexical scoping ?</h1>
+         <img
+            class="hero-img"
+            src="/undraw_Problem_solving_re_4gq3.svg"
+            alt=""
+         />
+      </header>
+
+      <section class="section ow">
+         <div class="container container-center">
+            <small class="hero-dates">November 2021 </small>
+            <h1>Defination:</h1>
+            <p>
+               First off, JavaScript has lexical scoping with function scope. In
+               other words, even though JavaScript looks like it should have
+               block scope because it uses curly braces { }, a new scope is
+               created only when you create a new function.
+            </p>
+
+            <img src="/example.png" alt="" />
+         </div>
+      </section>
+
+      <section class="section">
+         <div class="container container-center">
+            <p>
+               In this example, the variable x is available everywhere inside of
+               outerFunction(). Also, the variable y is available everywhere
+               within the nestedFunction(), but neither are available outside of
+               the function where they were defined. The reason for this can be
+               explained by lexical scoping. The scope of variables is defined
+               by their position in source code. In order to resolve variables,
+               JavaScript starts at the innermost scope and searches outwards
+               until it finds the variable it was looking for. Lexical scoping
+               is nice, because we can easily figure out what the value of a
+               variable will be by looking at the code; whereas in dynamic
+               scoping, the meaning of a variable can change at runtime, making
+               it more difficult.
+            </p>
+         </div>
+      </section>
+   </body>
+</html>
