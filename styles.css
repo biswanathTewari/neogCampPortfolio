@@ -1,19 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap");
 
 :root {
-   --primary-color: #7c3aed;
-   --off-white: #f3f4f6;
+   --primary-color: #34d399;
+   --white: #ecfdf5;
+   --off-white: #d1fae5;
    --dark-gray: #6b7280;
 }
 
 body {
-   font-family: "Ubuntu", sans-serif;
+   font-family: "Josefin Sans", sans-serif;
+   font-size: 1.4rem;
    margin: 0px;
+   background-color: var(--white);
 }
 
 hr {
    margin: 2rem 0rem;
 }
+
+/**---------Containers----------*/
 
 .container {
    padding-left: 1rem;
@@ -25,6 +32,8 @@ hr {
    margin: auto;
 }
 
+/**-------Links-------------*/
+
 .link {
    text-decoration: none;
    padding: 0.5rem 1rem;
@@ -33,7 +42,7 @@ hr {
 .primary-link {
    background-color: var(--primary-color);
    border-radius: 0.5rem;
-   color: white;
+   color: var(--white);
 }
 
 .secondary-link {
@@ -51,15 +60,19 @@ hr {
    padding: 0rem 0.5rem;
 }
 
+/**----------Navigations--------------*/
+
 .navigation {
    background-color: var(--primary-color);
-   color: white;
+   color: var(--white);
    padding: 1rem;
-   border-bottom-left-radius: 2rem;
+   border-bottom-left-radius: 3rem;
 }
 
 .navigation .nav-brand {
    font-weight: bold;
+   font-family: "Alex Brush", cursive;
+   font-size: 3rem;
 }
 
 .navigation .nav-pills {
@@ -67,12 +80,14 @@ hr {
 }
 
 .navigation .link {
-   color: white;
+   color: var(--white);
 }
 
 .navigation .link-active {
    font-weight: bold;
 }
+
+/**----------hero-------------*/
 
 .hero {
    padding: 2rem;
@@ -98,6 +113,8 @@ hr {
    text-align: center;
 }
 
+/**---------section-------------*/
+
 .section {
    padding: 2rem;
 }
@@ -110,21 +127,23 @@ hr {
    background-color: var(--off-white);
 }
 
+/**--------footer--------------*/
+
 footer {
    background-color: var(--primary-color);
    padding: 2rem 1rem;
    text-align: center;
-   color: white;
+   color: var(--white);
    border-top-right-radius: 2rem;
 }
 
 .footer .link {
-   color: white;
+   color: var(--white);
 }
 
 .footer .footer-header {
    font-weight: bold;
-   font-size: large;
+   font-size: x-large;
 }
 
 .footer ul {
