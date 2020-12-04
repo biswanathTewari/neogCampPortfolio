@@ -36,7 +36,7 @@ hr {
 
 .link {
    text-decoration: none;
-   padding: 0.5rem 1rem;
+   padding: 0.5rem 1vw;
 }
 
 .primary-link {
@@ -57,7 +57,9 @@ hr {
 
 .list-item-inline {
    display: inline;
-   padding: 0rem 0.5rem;
+   padding: 0rem 0.5vw;
+   margin: 0;
+   border: 0;
 }
 
 /**----------Navigations--------------*/
